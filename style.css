@@ -78,10 +78,8 @@ a{
 
 .nav-links a:hover,
 .menu-links a:hover{
-    color: black;
+    color: #0071e3;   /* Apple blue */
     text-decoration: none;
-    background: rgba(255,255,255,.25);
-    border-radius: 8px;
 }
 
 nav.scrolled{
