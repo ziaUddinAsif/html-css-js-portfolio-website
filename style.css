@@ -375,13 +375,6 @@ section{
     text-align:justify;
 }
 
-@media(max-width:900px){
-
-    .about-top{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-}
 
 
 /*==================== SKILLS ====================*/
@@ -600,162 +593,6 @@ font-size:.8rem;
 
 }
 
-/*================ CERTIFICATIONS =================*/
-
-#achievements{
-    padding:5rem 8%;
-}
-
-.achievement-container{
-    margin-top:3rem;
-    display:flex;
-    flex-direction:column;
-    gap:1.8rem;
-}
-
-/* Card */
-
-.achievement-card{
-
-    display:flex;
-    align-items:center;
-    gap:1.8rem;
-
-    padding:2rem;
-
-    border:2px solid rgb(53,53,53);
-    border-radius:2rem;
-
-    transition:.3s;
-    background:#fff;
-}
-
-.achievement-card:hover{
-
-    transform:translateY(-6px);
-
-    box-shadow:0 15px 35px rgba(0,0,0,.08);
-
-}
-
-/* Icon */
-
-.achievement-icon{
-
-    width:80px;
-    height:80px;
-
-    min-width:80px;
-
-    border-radius:50%;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    background:#f4f4f4;
-
-    font-size:2rem;
-}
-
-/* Content */
-
-.achievement-content{
-
-    flex:1;
-
-}
-
-.achievement-content h2{
-
-    font-size:1.4rem;
-    margin-bottom:.4rem;
-}
-
-.achievement-content h4{
-
-    color:#666;
-    font-size:.95rem;
-
-    margin-bottom:1rem;
-}
-
-.achievement-content p{
-
-    line-height:1.7;
-    color:#666;
-
-    margin-bottom:1rem;
-}
-
-/* Tags */
-
-.achievement-tags{
-
-    display:flex;
-    flex-wrap:wrap;
-    gap:.6rem;
-}
-
-.achievement-tags span{
-
-    padding:.45rem .9rem;
-
-    border:1px solid #bbb;
-
-    border-radius:999px;
-
-    font-size:.82rem;
-
-    transition:.3s;
-}
-
-.achievement-tags span:hover{
-
-    background:#333;
-    color:white;
-}
-
-/* Button */
-
-.certificate-btn{
-
-    white-space:nowrap;
-
-    text-decoration:none;
-
-    color:#333;
-
-    font-weight:600;
-
-    transition:.3s;
-}
-
-.certificate-btn:hover{
-
-    color:black;
-
-    transform:translateX(5px);
-}
-
-/* Mobile */
-
-@media(max-width:900px){
-
-    .achievement-card{
-
-        gap:1rem;
-
-    }
-
-    .certificate-img{
-
-        width:170px;
-        height:110px;
-
-    }
-
-}
 
 /*================ CERTIFICATIONS & ACHIEVEMENTS ================*/
 
@@ -867,6 +704,7 @@ font-size:.8rem;
     }
 
 }
+
 
 /*================ CONTACT ================*/
 
@@ -1017,14 +855,3 @@ font-size:.8rem;
 
 }
 
-/* Mobile */
-
-@media(max-width:900px){
-
-.contact-container{
-
-grid-template-columns:1fr;
-
-}
-
-}
