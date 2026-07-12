@@ -1,9 +1,8 @@
-/* ===========================
-   RESPONSIVE
-=========================== */
+/* ===============================
+        RESPONSIVE DESIGN
+================================ */
 
-/* ---------- Large Tablets ---------- */
-
+/* Desktop -> Tablet */
 @media screen and (max-width:1200px){
 
     #desktop-nav{
@@ -12,91 +11,121 @@
 
     #hamburger-nav{
         display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:0 40px;
+        height:80px;
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        background:#fff;
+        border-bottom:1px solid #e5e7eb;
+        box-shadow:0 2px 8px rgba(0,0,0,.05);
+        z-index:1000;
+        box-sizing:border-box;
     }
 
     section{
         margin:0 6%;
     }
 
-}
-
-
-/* ---------- Tablets ---------- */
-
-@media screen and (max-width:992px){
-
-    section{
-        margin:0 5%;
-    }
-
-    #profile{
-
-        gap:3rem;
-        min-height:auto;
-        padding:3rem 0;
-        flex-wrap:wrap;
-
-    }
-
-    .section_pic-container{
-
-        width:320px;
-        height:320px;
-
-    }
-
-    .title{
-
-        font-size:2.6rem;
-
-    }
-
-    .section_text_p2{
-
-        font-size:1.5rem;
-
-    }
-
     .about-top{
-
         grid-template-columns:repeat(2,1fr);
-
     }
 
     .projects-container{
-
         grid-template-columns:repeat(2,1fr);
-
-    }
-
-    .contact-container{
-
-        grid-template-columns:1fr;
-
     }
 
 }
 
 
-/* ---------- Mobile ---------- */
+/* ===============================
+            TABLET
+================================ */
+
+@media screen and (max-width:992px){
+
+    #profile{
+        gap:3rem;
+        flex-wrap:wrap;
+        min-height:auto;
+        padding:3rem 0;
+    }
+
+    .section_pic-container{
+        width:300px;
+        height:300px;
+    }
+
+    .title{
+        font-size:2.6rem;
+    }
+
+    .section_text_p2{
+        font-size:1.4rem;
+    }
+
+    .skills-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .contact-container{
+        grid-template-columns:1fr;
+    }
+
+}
+
+
+/* ===============================
+            MOBILE
+================================ */
 
 @media screen and (max-width:768px){
 
-    section{
-
-        margin:0 4%;
-        padding:4rem 0;
-
+    body{
+        padding-top:80px;
     }
+
+    section{
+        margin:0 20px;
+        padding:4rem 0;
+    }
+
+    #hamburger-nav{
+        padding:0 20px;
+        height:70px;
+    }
+
+    .logo{
+        font-size:1.4rem;
+    }
+
+    .menu-links{
+        width:220px;
+        border-radius:15px;
+        box-shadow:0 10px 25px rgba(0,0,0,.12);
+    }
+
+    .menu-links a{
+        font-size:1.2rem;
+        padding:15px;
+    }
+
+    /* Profile */
 
     #profile{
 
         flex-direction:column;
+
         justify-content:center;
+
         align-items:center;
-        gap:2rem;
 
         text-align:center;
+
+        gap:2rem;
 
         min-height:auto;
 
@@ -104,20 +133,27 @@
 
     .section_pic-container{
 
-        width:250px;
-        height:250px;
+        width:220px;
+
+        height:220px;
+
+        margin:0 auto;
 
     }
 
-    .section_text{
+    .section_pic-container img{
 
         width:100%;
+
+        height:100%;
+
+        object-fit:cover;
 
     }
 
     .title{
 
-        font-size:2.2rem;
+        font-size:2rem;
 
     }
 
@@ -130,53 +166,54 @@
     .btn-container{
 
         flex-wrap:wrap;
-        justify-content:center;
 
     }
 
     .btn{
 
-        width:170px;
+        width:160px;
 
     }
 
-    /* ABOUT */
+    /* About */
 
     .about-top{
 
         grid-template-columns:1fr;
 
-        gap:1.2rem;
-
     }
 
-    /* SKILLS */
+    /* Skills */
 
     .skills-container{
 
         grid-template-columns:1fr;
 
-        gap:1.2rem;
-
     }
 
-    /* PROJECTS */
+    /* Projects */
 
     .projects-container{
 
         grid-template-columns:1fr;
 
-        gap:1.5rem;
+        gap:20px;
 
     }
 
     .project-img{
 
-        height:200px;
+        height:220px;
 
     }
 
-    /* ACHIEVEMENTS */
+    .project-content{
+
+        padding:20px;
+
+    }
+
+    /* Achievement */
 
     .achievement-card{
 
@@ -189,12 +226,14 @@
     .certificate-img{
 
         width:100%;
+
         max-width:320px;
+
         height:auto;
 
     }
 
-    /* CONTACT */
+    /* Contact */
 
     .contact-container{
 
@@ -205,7 +244,9 @@
 }
 
 
-/* ---------- Small Phones ---------- */
+/* ===============================
+        SMALL PHONE
+================================ */
 
 @media screen and (max-width:480px){
 
@@ -215,22 +256,15 @@
 
     }
 
-    section{
-
-        margin:0 18px;
-        padding:3rem 0;
-
-    }
-
     .logo{
 
-        font-size:1.4rem;
+        font-size:1.2rem;
 
     }
 
     .title{
 
-        font-size:1.9rem;
+        font-size:1.8rem;
 
     }
 
@@ -242,20 +276,15 @@
 
     .section_pic-container{
 
-        width:190px;
-        height:190px;
+        width:180px;
+
+        height:180px;
 
     }
 
     .btn{
 
         width:100%;
-
-    }
-
-    .project-img{
-
-        height:170px;
 
     }
 
