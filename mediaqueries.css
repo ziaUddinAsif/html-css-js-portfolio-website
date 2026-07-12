@@ -1,4 +1,4 @@
-/* ================= RESPONSIVE ================= */
+/* ================= LARGE SCREEN ================= */
 
 @media screen and (max-width:1200px){
 
@@ -12,74 +12,167 @@
 
 }
 
-/* Tablet */
+/* ================= TABLET ================= */
+
+@media screen and (max-width:992px){
+
+    section{
+        margin:0 6%;
+    }
+
+    #profile{
+        gap:3rem;
+        min-height:auto;
+        flex-wrap:wrap;
+    }
+
+    .section_pic-container{
+        width:320px;
+        height:320px;
+    }
+
+    .title{
+        font-size:2.7rem;
+    }
+
+    .section_text_p2{
+        font-size:1.5rem;
+    }
+
+    .about-top{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .skills-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .projects-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .contact-container{
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* ================= MOBILE ================= */
 
 @media screen and (max-width:768px){
 
     section{
         margin:0 5%;
+        padding:4rem 0;
     }
 
     #profile{
-
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
         gap:2rem;
-        height:auto;
-        flex-wrap:wrap;
-
+        min-height:auto;
+        text-align:center;
     }
 
     .section_pic-container{
-
-        width:280px;
-        height:280px;
-
+        width:240px;
+        height:240px;
     }
 
     .title{
-
-        font-size:2.5rem;
-
+        font-size:2.2rem;
     }
 
     .section_text_p2{
+        font-size:1.2rem;
+    }
 
-        font-size:1.4rem;
+    .btn-container{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
 
+    .btn{
+        width:150px;
+    }
+
+    .about-top{
+        grid-template-columns:1fr;
+    }
+
+    .details-container{
+        padding:1.5rem;
+    }
+
+    .about-text{
+        padding:1.5rem;
+    }
+
+    .skills-container{
+        grid-template-columns:1fr;
+    }
+
+    .skill-card{
+        padding:1.5rem;
+    }
+
+    .projects-container{
+        grid-template-columns:1fr;
+    }
+
+    .project-img{
+        height:180px;
+    }
+
+    .project-content{
+        padding:16px;
+    }
+
+    .achievement-card{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .certificate-img{
+        width:100%;
+        max-width:300px;
+        height:auto;
+    }
+
+    .contact-container{
+        grid-template-columns:1fr;
     }
 
 }
 
-/* Small phones */
+/* ================= SMALL MOBILE ================= */
 
 @media screen and (max-width:480px){
 
-    section{
-        margin:0 4%;
-    }
-
-    .section_pic-container{
-
-        width:220px;
-        height:220px;
-
-    }
-
-    .title{
-
-        font-size:2rem;
-
-    }
-
-    .section_text_p2{
-
-        font-size:1.1rem;
-
+    body{
+        padding-top:70px;
     }
 
     .logo{
+        font-size:1.3rem;
+    }
 
-        font-size:1.4rem;
+    .title{
+        font-size:1.8rem;
+    }
 
+    .section_text_p2{
+        font-size:1rem;
+    }
+
+    .section_pic-container{
+        width:180px;
+        height:180px;
+    }
+
+    .btn{
+        width:100%;
     }
 
 }

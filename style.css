@@ -688,23 +688,6 @@ font-size:.8rem;
     background:black;
 }
 
-/* Responsive */
-
-@media(max-width:900px){
-
-    .achievement-card{
-        flex-direction:column;
-        text-align:center;
-    }
-
-    .certificate-img{
-        width:100%;
-        max-width:350px;
-        height:auto;
-    }
-
-}
-
 
 /*================ CONTACT ================*/
 
