@@ -215,10 +215,13 @@ section{
 /*PROFILE SECTION*/
 
 #profile{
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-    height: 80vh;
+
+    display:flex;
+    justify-content:center;
+    gap:3rem;
+
+    min-height:80vh;
+
 }
 
 .section_pic-container{
@@ -377,11 +380,10 @@ section{
 @media(max-width:900px){
 
     .about-top{
-        grid-template-columns:1fr;
+        grid-template-columns:repeat(2,1fr);
     }
 
 }
-
 
 
 /*==================== SKILLS ====================*/
@@ -570,22 +572,35 @@ section{
 
 /* Responsive */
 
-@media(max-width:1100px){
-
-.projects-container{
-grid-template-columns:repeat(2,1fr);
-}
-
-}
-
 @media(max-width:768px){
 
 .projects-container{
-grid-template-columns:1fr;
-}
+
+grid-template-columns:repeat(2,1fr);
+
+gap:15px;
 
 }
 
+.project-content{
+
+padding:15px;
+
+}
+
+.project-content h2{
+
+font-size:1rem;
+
+}
+
+.project-content p{
+
+font-size:.8rem;
+
+}
+
+}
 
 /*================ CERTIFICATIONS =================*/
 
@@ -729,18 +744,18 @@ grid-template-columns:1fr;
 
 @media(max-width:900px){
 
-.achievement-card{
+    .achievement-card{
 
-    flex-direction:column;
+        gap:1rem;
 
-    align-items:flex-start;
+    }
 
-}
+    .certificate-img{
 
-.certificate-btn{
+        width:170px;
+        height:110px;
 
-    margin-top:1rem;
-}
+    }
 
 }
 

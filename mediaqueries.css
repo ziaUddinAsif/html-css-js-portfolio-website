@@ -1,19 +1,25 @@
-/* ================= NAVIGATION ================= */
+@media screen and (max-width:768px){
 
-/* ================= NAVIGATION ================= */
-
-@media screen and (max-width:1200px){
-
-    #desktop-nav{
-        display:none;
+    .projects-container{
+        grid-template-columns:repeat(2,1fr);
+        gap:15px;
     }
 
-    #hamburger-nav{
-        display:flex;
+    .project-card{
+        width:100%;
+        margin:auto;
     }
 
-    section{
-        padding:4rem 6%;
+    .project-content{
+        padding:15px;
+    }
+
+    .project-content h2{
+        font-size:1rem;
+    }
+
+    .project-content p{
+        font-size:.8rem;
     }
 
 }
