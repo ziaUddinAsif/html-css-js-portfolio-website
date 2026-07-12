@@ -215,13 +215,10 @@ section{
 /*PROFILE SECTION*/
 
 #profile{
-
-    display:flex;
-    justify-content:center;
-    gap:3rem;
-
-    min-height:80vh;
-
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
 }
 
 .section_pic-container{
